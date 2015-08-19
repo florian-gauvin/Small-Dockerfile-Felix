@@ -31,6 +31,8 @@ WORKDIR /usr/rootfs.tar-felix
 RUN tar -xf rootfs.tar &&\
 	rm rootfs.tar
 
+#Install etcd
+
 RUN cd /tmp \
 	&& export ETCDVERSION=v2.0.13 \
 	&& curl -k -L https://github.com/coreos/etcd/releases/download/$ETCDVERSION/etcd-$ETCDVERSION-linux-amd64.tar.gz | gunzip | tar xf - \

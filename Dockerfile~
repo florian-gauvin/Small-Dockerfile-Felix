@@ -7,6 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 #Download all the packages needed 
 
 RUN apt-get update && apt-get install -y \
+	curl \
 	git \
 	wget \
         && apt-get clean 
