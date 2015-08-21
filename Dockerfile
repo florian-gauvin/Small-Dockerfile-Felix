@@ -46,8 +46,8 @@ ADD resources /usr/rootfs.tar-felix/tmp
 
 WORKDIR /usr/
 
-RUN	git clone https://github.com/florian-gauvin/openjdk8-compact2.git && \
-	cp -r openjdk8-compact2/j2re-compact2-image/ rootfs.tar-felix/usr/ &&\
+RUN	git clone https://github.com/florian-gauvin/openjdk8-compplete-jre.git && \
+	cp -r openjdk8-comlete-jre/j2re-image/ rootfs.tar-felix/usr/ &&\
 	cp -r /usr/felix-framework-5.0.1 /usr/rootfs.tar-felix/usr/ && \
 	cd /usr/rootfs.tar-felix/ &&\
 	tar -cf rootfs.tar * && \
